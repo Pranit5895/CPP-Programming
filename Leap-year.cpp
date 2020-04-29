@@ -25,3 +25,5 @@ int main()
 
     return 0;
 }
+
+This is the code to check whether an year is a leap year 
