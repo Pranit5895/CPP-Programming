@@ -8,7 +8,7 @@ int main()
     cout << "Enter rows and columns of matrix: ";
     cin >> r >> c;
 
-    // Storing element of matrix entered by user in array a[][].
+    
     cout << endl << "Enter elements of matrix: " << endl;
     for(i = 0; i < r; ++i)
     for(j = 0; j < c; ++j)
@@ -17,7 +17,7 @@ int main()
         cin >> a[i][j];
     }
 
-    // Displaying the matrix a[][]
+    
     cout << endl << "Entered Matrix: " << endl;
     for(i = 0; i < r; ++i)
         for(j = 0; j < c; ++j)
@@ -27,14 +27,14 @@ int main()
                 cout << endl << endl;
         }
 
-    // Finding transpose of matrix a[][] and storing it in array trans[][].
+    
     for(i = 0; i < r; ++i)
         for(j = 0; j < c; ++j)
         {
             trans[j][i]=a[i][j];
         }
 
-    // Displaying the transpose,i.e, Displaying array trans[][].
+    
     cout << endl << "Transpose of Matrix: " << endl;
     for(i = 0; i < c; ++i)
         for(j = 0; j < r; ++j)
