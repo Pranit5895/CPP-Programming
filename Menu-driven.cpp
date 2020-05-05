@@ -27,4 +27,15 @@ case 2:bubble(arr,size);
 case 3:insertion(arr,size);
        break;
 }
+cout<<"\nEnter the elements to be searched\n";
+int item;
+cin>>item;
+int index=binary(arr,size,item);
+if(index==-1)
+cout<<"\nsorry!!given element could not be found.\n";
+else
+cout<<"\nElement found at index:"<<index<<",position:"<<index+1<<endl;
+getch();
+clrscr();
+}
 
