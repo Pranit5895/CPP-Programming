@@ -18,4 +18,11 @@ void pattern(int n)
             cout << " * "; 
         cout << endl; 
     } 
-} 
+}
+// Driver code
+int main()
+{
+    int n = 6;
+    pattern(n);
+    return 0;
+}
