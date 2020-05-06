@@ -61,4 +61,23 @@ for(int m=0;m<size;m++)
 cout<<arr1[m]<<" ";
 }
 }
+void bubble(int arr1[],int size)
+{
+int tmp;
+for(int i=0;i<size;i++)
+{
+for(int j=0;j<(size-1)-i;j++)
+{
+if(arr1[j]>arr1[j+1])
+{
+tmp=arr1[j];
+arr1[j]=arr1[j+1];
+arr1[j+1]=tmp;
+}
+}
+cout<<"\nArray after pass "<<i+1<<" is: ";
+for(int m=0;m<size;m++)
+cout<<arr1[m]<<" ";
+}
+}
 
