@@ -38,4 +38,27 @@ cout<<"\nElement found at index:"<<index<<",position:"<<index+1<<endl;
 getch();
 clrscr();
 }
+void selection(int arr1[],int size)
+{
+int small,pos,tmp;
+for(int i=0;i<size-1;i++)
+{
+small=arr1[i];
+pos=i;
+for(int j=i+1;j<size;j++)
+{
+if(arr1[j]<small)
+{
+small=arr1[j];
+pos=j;
+}
+}
+tmp=arr1[i];
+arr1[i]=arr1[pos];
+arr1[pos]=tmp;
+cout<<"\nArray after pass "<<i+1<<" is: ";
+for(int m=0;m<size;m++)
+cout<<arr1[m]<<" ";
+}
+}
 
