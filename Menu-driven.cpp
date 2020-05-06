@@ -98,4 +98,18 @@ cout<<"\nArray after sorting is: ";
 for(int m=0;m<size;m++)
 cout<<A[m]<<" ";
 }
+int binary(int B[],int size,int item)
+{
+int beg,last,mid;
+beg=0;
+while(beg<=last)
+{
+mid=(beg+last)/2;
+if(item==B[mid])return mid;
+else if(item>B[mid])beg=mid+1;
+else
+last=mid-1;
+}
+return-1;
+}
 
