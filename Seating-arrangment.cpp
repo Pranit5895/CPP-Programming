@@ -49,6 +49,29 @@ void first_class()
 	cout<<"\tPlease choose a seat from 1-5"<< endl;
             cin >> positionint;
             f = positionint - 1;
+	    if (positionint > 5)
+            {
+                cout << "The seating arrangements for this class is 1-5, please pick again." << endl;
+            }
+            if (positionint <=5)
+            {
+                if (firstclass [f] == 0)//seat is free
+                {
+                    firstclass [f] = 1;
+                    cout << "Your seat number is: " << positionint << endl;
+                }
+				else
+                {
+                    cout << "This seat is already booked" << endl;
+				}
+            }
+    cout << "Would you like to book another seat (y/n)? " << endl;
+    cin >> cont;
+	if(cont == 'y' || cont == 'Y')
+            {
+                main();
+            }
+}
 
 
 
