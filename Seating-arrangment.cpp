@@ -25,3 +25,27 @@ int main()
         cout << "\t Thankyou for booking with SHARMA AIRLINE reservationss" << endl;
         return 0;
     }
+
+cout << "\t---Welcome to the SHARMA AIRLINE booking system---" << endl;
+    cout << "\t---Which class would you like?---" << endl;
+	cout << "\t---(1) For First-Class---" << endl;
+	cout << "\t---(2) For Economy-Class---" << endl;
+    cin >> answer;
+    if(answer == 1)
+    {
+        first_class(); //Function call.
+    }
+    else if(answer == 2)
+    {
+        second_class(); //Function call.
+    }
+    else
+    {
+        return 0; //Any other number quits.
+    }
+}
+
+
+
+
+
