@@ -19,3 +19,12 @@ i #include<iostream.h>
                       cout<<"\nThe result is : "<<result;
                   }
               }
+	       catch(int x)
+              {
+                  cout<<"\nCan't divide by : "<<x;
+              }
+
+              cout<<"\nEnd of program.";
+
+       }
+
