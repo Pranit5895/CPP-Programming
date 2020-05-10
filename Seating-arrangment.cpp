@@ -14,3 +14,14 @@ using namespace std;
 //Function declarations
 void first_class();
 void second_class();
+//Variable declarations
+short int answer = 0;
+char cont = 'y'; //So we do not quit immediately! The user can make this to n (no) later on.
+
+int main()
+{
+    if(cont == 'n' || cont == 'N') //If the user chooses not to continue after booking a seat, then we will quit.
+    {
+        cout << "\t Thankyou for booking with SHARMA AIRLINE reservationss" << endl;
+        return 0;
+    }
