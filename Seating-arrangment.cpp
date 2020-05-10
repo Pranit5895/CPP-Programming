@@ -95,7 +95,13 @@ void second_class()
 				cout << "This seat is already booked" << endl;
 			}
 				}
-
+cout << "Would you like to book another seat (y/n)? " << endl;
+    cin >> cont;
+		if(cont == 'y' || cont == 'Y')
+            {
+                main();
+            }
+}
 
 
 
