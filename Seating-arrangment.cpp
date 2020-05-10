@@ -44,6 +44,11 @@ cout << "\t---Welcome to the SHARMA AIRLINE booking system---" << endl;
         return 0; //Any other number quits.
     }
 }
+void first_class()
+{
+	cout<<"\tPlease choose a seat from 1-5"<< endl;
+            cin >> positionint;
+            f = positionint - 1;
 
 
 
