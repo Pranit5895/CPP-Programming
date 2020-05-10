@@ -33,3 +33,18 @@ int main()
     cout << "\ngqlist1.pop_front() : ";
     gqlist1.pop_front();
     showlist(gqlist1);
+    cout << "\ngqlist2.pop_back() : ";
+    gqlist2.pop_back();
+    showlist(gqlist2);
+
+    cout << "\ngqlist1.reverse() : ";
+    gqlist1.reverse();
+    showlist(gqlist1);
+
+    cout << "\ngqlist2.sort(): ";
+    gqlist2.sort();
+    showlist(gqlist2);
+
+    return 0;
+
+}
