@@ -25,3 +25,21 @@ int main()
         st.close(); // closing file
     }
     st.open("E:\studytonight.txt",ios::in);
+    if(!st) //Checking whether file exist
+    {
+        cout<<"No such file";
+    }
+    else
+    {
+        char ch;
+        st.seekg(5, ios::beg);  // Go to position 5 from begning.
+	cout<<"As per tellg File Pointer Position is "<<st.tellg()<<endl; //Checking file pointer position
+        cout<<endl;
+        st.seekg(1, ios::cur); //Go to position 1 from beginning.
+        cout<<"As per tellg File Pointer Position is "<<st.tellg()<<endl; //Checking file pointer position
+        st.close(); //Closing file
+    }
+    getch();
+    return 0;
+}
+
