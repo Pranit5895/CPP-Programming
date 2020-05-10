@@ -72,6 +72,13 @@ void first_class()
                 main();
             }
 }
+void second_class()
+{
+
+	cout << "\t--Welcome to Second class--" << endl;
+				cout<<"\tPlease choose a seat from 6-10"<< endl;
+				s = positionint - 1;
+				cin >> positionint;
 
 
 
