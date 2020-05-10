@@ -79,6 +79,23 @@ void second_class()
 				cout<<"\tPlease choose a seat from 6-10"<< endl;
 				s = positionint - 1;
 				cin >> positionint;
+				if (positionint <= 5 || positionint >= 11 )
+			{
+				cout << "The seating arrangements for this class is 6-10, please pick again." << endl;
+			}
+				if (positionint >= 6)
+				{
+				if (secondclass [s] == 0)
+				{
+				secondclass [s] = 1;
+				cout << "Your seat number is: " << positionint << endl;
+				}
+			else
+			{
+				cout << "This seat is already booked" << endl;
+			}
+				}
+
 
 
 
