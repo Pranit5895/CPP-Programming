@@ -21,3 +21,15 @@ int main()
         gqlist1.push_back(i * 2);
         gqlist2.push_front(i * 3);
     }
+    cout << "\nList 1 (gqlist1) is : ";
+    showlist(gqlist1);
+
+    cout << "\nList 2 (gqlist2) is : ";
+    showlist(gqlist2);
+
+    cout << "\ngqlist1.front() : " << gqlist1.front();
+    cout << "\ngqlist1.back() : " << gqlist1.back();
+
+    cout << "\ngqlist1.pop_front() : ";
+    gqlist1.pop_front();
+    showlist(gqlist1);
