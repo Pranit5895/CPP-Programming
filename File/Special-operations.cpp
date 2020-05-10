@@ -11,3 +11,12 @@ int main()
     {
         cout<<"File creation failed";
     }
+    else
+    {
+        cout<<"New file created"<<endl;
+        st<<"Hello Friends"; //Writing to file
+
+        // Checking the file pointer position
+        cout<<"File Pointer Position is "<<st.tellp()<<endl;
+
+        st.seekp(-1, ios::cur); // Go one position back from current position
