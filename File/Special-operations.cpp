@@ -20,3 +20,8 @@ int main()
         cout<<"File Pointer Position is "<<st.tellp()<<endl;
 
         st.seekp(-1, ios::cur); // Go one position back from current position
+	 cout<<"As per tellp File Pointer Position is "<<st.tellp()<<endl;
+
+        st.close(); // closing file
+    }
+    st.open("E:\studytonight.txt",ios::in);
