@@ -21,4 +21,17 @@ int main()
     // the content of file. To append the content, open in ios:app 
     // fout.open("sample.txt", ios::app) 
     fout.open("sample.txt"); 
+ // Execute a loop If file successfully opened 
+    while (fout) { 
   
+        // Read a Line from standard input 
+        getline(cin, line); 
+  
+        // Press -1 to exit 
+        if (line == "-1") 
+            break; 
+  
+        // Write line in file 
+        fout << line << endl; 
+    } 
+   
