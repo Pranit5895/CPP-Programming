@@ -41,4 +41,19 @@ int main()
     ifstream fin; 
   
     // by default open mode = ios::in mode 
-    fin.open("sample.txt");   
+    fin.open("sample.txt");
+     // Execute a loop until EOF (End of File)
+    while (fin) {
+
+        // Read a Line from File
+        getline(fin, line);
+
+        // Print line in Console
+        cout << line << endl;
+    }
+
+    // Close the file
+    fin.close();
+
+    return 0;
+}
