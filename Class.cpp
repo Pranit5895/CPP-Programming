@@ -7,4 +7,14 @@ class Geeks
 { 
     public: 
     string geekname; 
-    int id; 
+    int id;
+
+    // printname is not defined inside class definition
+    void printname();
+
+    // printid is defined inside class definition
+    void printid()
+    {
+        cout << "Geek id is: " << id;
+    }
+};
