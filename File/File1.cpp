@@ -34,4 +34,11 @@ int main()
         // Write line in file 
         fout << line << endl; 
     } 
-   
+ // Close the File 
+    fout.close(); 
+  
+    // Creation of ifstream class object to read the file 
+    ifstream fin; 
+  
+    // by default open mode = ios::in mode 
+    fin.open("sample.txt");   
