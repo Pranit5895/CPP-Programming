@@ -50,3 +50,9 @@ void radixsort(int arr[], int n)
     for (int exp = 1; m/exp > 0; exp *= 10)
         countSort(arr, n, exp);
 }
+// A utility function to print an array
+void print(int arr[], int n)
+{
+    for (int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+}
