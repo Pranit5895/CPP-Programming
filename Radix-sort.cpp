@@ -56,3 +56,13 @@ void print(int arr[], int n)
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
 }
+// Driver program to test above functions
+int main()
+{
+    int arr[] = {170, 45, 75, 90, 802, 24, 2, 66};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    radixsort(arr, n);
+    print(arr, n);
+    return 0;
+}
+
