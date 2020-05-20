@@ -32,3 +32,8 @@ void countSort(int arr[], int n, int exp)
         output[count[ (arr[i]/exp)%10 ] - 1] = arr[i];
         count[ (arr[i]/exp)%10 ]--;
     }
+    // Copy the output array to arr[], so that arr[] now
+    // contains sorted numbers according to current digit
+    for (i = 0; i < n; i++)
+        arr[i] = output[i];
+}
