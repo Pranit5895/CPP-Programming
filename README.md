@@ -12,5 +12,8 @@ General Purpose Language - You can use C++ to develop games, desktop apps, opera
 Speed - Like C programming, the performance of optimized C++ code is exceptional.
 Object-oriented - C++ allows you to divide complex problems into smaller sets by using objects.
 
+# Turbo C++
+Turbo C++ is a discontinued C++ compiler and integrated development environment originally from Borland. It was designed as a home and hobbyist counterpart for Borland C++. As the developer focused more on professional programming tools, later Turbo C++ products were made as scaled down versions of its professional compilers.
+
 
 
